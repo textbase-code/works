@@ -1,0 +1,29 @@
+// ---
+// common
+// ---
+
+#system-top{
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.wrap{
+  position: relative;
+  min-width: $min-width;
+  max-width: $max-width;
+  margin-right:20px;
+  margin-left:20px;
+  @include tablet {
+    margin-right:40px;
+    margin-left:40px;
+  }
+  @include laptop {
+    margin-right:10%;
+    margin-left:10%;
+  }
+  @include desktop {
+    margin-right:auto;
+    margin-left:auto;;
+  }
+}

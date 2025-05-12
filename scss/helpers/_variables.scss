@@ -1,0 +1,35 @@
+// ---
+// variables (global)
+// ---
+
+// -------
+// color
+// -------
+$bg-color-base: #000;
+
+// -------
+// * path
+// -------
+$path-image: "../images/";
+
+// -------
+// * font
+// -------
+$fw-m: 500;
+$fw-r: 400;
+$font-size-base: 14px;
+$font-family-base: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,"Apple SD Gothic Neo","Noto Sans KR","Spoqa Han Sans Neo","Malgun Gothic",sans-serif;
+$font-color-base: #fff;
+
+// -------
+// * layout
+// -------
+
+// Break Point
+$desktop: 1680px;
+$laptop: 1060px;
+$tablet: 768px;
+
+// size
+$min-width: 320px;
+$max-width: 1520px;

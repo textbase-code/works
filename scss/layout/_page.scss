@@ -1,0 +1,233 @@
+// ---
+// page
+// ---
+
+.page-title{
+	padding-top:96px;
+	padding-bottom:96px;
+	@include fromlaptop{
+		padding-top:200px;
+		padding-bottom:200px;
+	}
+	@include fw-thin;
+	span{
+		opacity:.4;
+	}
+}
+
+.page-list{
+	padding-top:40px;
+	color:#fff;
+	@include fromlaptop{
+		padding-top: 80px;
+	}
+	a[href^="mailto"]{
+		float:right;
+		text-align:right;
+		font-size:20px;
+		font-weight:600;
+		@include fromlaptop{
+			font-size: 40px;
+		}
+	}
+	.page-title{
+		clear:both;
+		float:left;
+		font-size:32px;
+		@include fromlaptop{
+			font-size:64px;
+		}
+	}
+	.list{
+		clear:both;
+		@include fromtablet{
+			overflow: hidden;
+		}
+	}
+	.list_item{
+        overflow:hidden;
+		position: relative;
+		padding: 24px;
+		@include fromlaptop{
+			padding: 48px;
+		}
+		background: #111;
+		background-position: 50% 50%;
+		@include fw-semibold;
+		&:after {
+			content: "";
+			display: block;
+			padding-bottom: 100%;
+		}
+		&:not(:first-child){
+			@include mobile{
+				margin-top: 40px;
+			}
+		}
+		&:nth-child(n+3){
+			@include fromtablet{
+				margin-top: 5.2%;
+			}
+		}
+		&:nth-child(2n){
+			@include fromtablet{
+				margin-left: 5.2%;
+			}
+		}
+		@include fromtablet{
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			float: left;
+			width: 47.4%;
+			&:before{content:'';
+				display:block;
+				position:absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color:#111;
+				opacity:0;
+				z-index:1;
+			}
+		}
+		&:hover{
+			@include fromtablet{
+				&:before{content:'';
+					transition: opacity 0.2s;
+					-webkit-transition: opacity 0.2s;
+					opacity: .9;
+				}
+				div{
+					display:block;
+					z-index:10;
+				}
+			}
+		}
+		div {
+			@include fromtablet{
+				display:none;
+			}
+			a{
+				@include fromtablet{
+					margin:0 16px;
+					padding:8px;
+					border-bottom:1px solid rgba(255,255,255,.2);
+					font-size:14px;
+					text-align:center;
+					@include montserrat;
+					&:hover{
+						border-bottom:1px solid #fff;
+					}
+				}
+				&:first-child{
+					@include mobile{
+						@include text-hidden;
+						position: absolute;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						z-index:10;
+					}
+				}
+				&:last-child{
+					@include mobile{
+						display:none;
+					}
+				}
+			}
+		}
+		p{
+			position:absolute;
+			top:24px;
+			right:24px;
+			left:24px;
+			font-size: 12px;
+			opacity: .4;
+			@include fromlaptop{
+				top: 48px;
+				right: 48px;
+				left: 48px;
+			}
+		}
+        img{
+            position:absolute;
+			top:50%;
+			right:50%;
+            transform:translate(50%,-50%);
+            max-width:max-content;
+        }
+		h3{
+			overflow: hidden;
+			position: absolute;
+			right: 24px;
+			bottom: 24px;
+			left: 24px;
+			@include fromlaptop{
+				right: 48px;
+				bottom: 48px;
+				left: 48px;
+			}
+		}
+	}
+	.list_item-ehouse{
+		@include bgi(ehouse);
+		background-size:44%;
+	}
+	.list_item-archive{
+		@include bgi(archive);
+		background-size:83%;
+	}
+	.list_item-datahub{
+		@include bgi(datahub);
+		background-size:55%;
+	}
+	.list_item-rentcar{
+		@include bgi(rentcar);
+		background-size:66%;
+	}
+	.list_item-marathon{
+		@include bgi(marathon);
+		background-size:26%;
+	}
+	.list_item-cm{
+		@include bgi(cm);
+		background-size:33%;
+	}
+	.list_item-bigdata{
+		@include bgi(bigdata);
+		background-size:65%;
+	}
+	.list_item-dashboard{
+		@include bgi(dashboard);
+		background-size:61%;
+	}
+	.btn-icon{
+		margin-right:auto;
+		margin-left:auto;
+	}
+}
+.page-view{
+	.page-title{
+		background-color:#111;
+		font-size:20px;
+		@include fromlaptop{
+			font-size:40px;
+		}
+		text-align:center;
+        p{
+            opacity:0.4;
+        }
+	}
+	.list{
+		li{
+			margin-top:96px;
+			text-align:center;
+			@include fromlaptop{
+				margin-top:200px;
+			}
+		}
+	}
+}
