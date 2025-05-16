@@ -222,6 +222,12 @@ img, video {
     font-size: 64px;
   }
 }
+.page-list .page-title h1 {
+  font-weight: 600;
+}
+.page-list .page-title span {
+  font-weight: 100;
+}
 .page-list .list {
   clear: both;
 }

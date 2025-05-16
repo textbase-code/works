@@ -37,6 +37,12 @@
 		@include fromlaptop{
 			font-size:64px;
 		}
+        h1{
+            @include fw-semibold;
+        }
+        span{
+            @include fw-thin;
+        }
 	}
 	.list{
 		clear:both;
